@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "161092686417",
+    "firebase_url": "https://adminapp-1f159-default-rtdb.firebaseio.com",
+    "project_id": "adminapp-1f159",
+    "storage_bucket": "adminapp-1f159.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161092686417:android:4acc04466cb0507e7fde70",
+        "android_client_info": {
+          "package_name": "com.mahadi.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161092686417-42frf2bp387f1sgs6d9q0c3j2ftqfogn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANPyAFaNtTnol6qZ5UqWihgqHtL7TQw3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161092686417-42frf2bp387f1sgs6d9q0c3j2ftqfogn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
