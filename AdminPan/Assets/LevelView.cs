@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -16,15 +16,24 @@ public class LevelView : MonoBehaviour
     public void SetUp(LevelInfo level)
     {
         this.level = level;
-        levelQuestion.text = $"Question: {level.question}";
-        levelAnswer.text = $"Question: {level.answer}";
+        levelQuestion.text = $"שאלה: {level.question}";
+        levelAnswer.text = $"שאלה: {level.answer}";
 
         Controller.instance.storageController.GetDownloadURL(level.imageURL, url =>
         {
             Debug.LogWarning(url);
            StartCoroutine(downloadImage(url));
-            levelName.text = $"Level - {transform.GetSiblingIndex()+1}";
+            levelName.text = $"שלב - {returns((transform.GetSiblingIndex()+1).ToString())}";
         });
+    }
+    public string returns(string number)
+    {
+        string d = "";
+        for (int i = number.Length-1; i >= 0; i--)
+        {
+            d += number[i];
+        }
+        return d;
     }
     IEnumerator downloadImage(string url)
     {
